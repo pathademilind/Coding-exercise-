@@ -1,0 +1,27 @@
+.sidenav-container {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid #555;
+}
+mat-list-item mat-icon{
+  cursor: pointer;
+}
+.mat-drawer.mat-drawer-side {
+background-color: #000;
+color: #fff;
+}
+
+.mat-icon.material-icons{
+  color: #fff;
+  font-size: 30px;
+  height: 30px;
+  width: 40px;
+}
+
+.nav-icon {
+  padding: 0 14px;
+}
+
+.nav-spacer {
+  flex: 1 1 auto;
+}

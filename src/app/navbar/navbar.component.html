@@ -1,0 +1,15 @@
+<mat-drawer-container class="sidenav-container">
+  <mat-drawer mode="side" opened>
+    <mat-list role="list">
+      <mat-list-item role="listitem"><mat-icon [routerLink]="['/list']">view_list</mat-icon></mat-list-item>
+      <mat-list-item role="listitem"><mat-icon [routerLink]="['/add']">add</mat-icon></mat-list-item>
+    </mat-list>
+
+  </mat-drawer>
+  <mat-drawer-content>
+  
+    <router-outlet></router-outlet>
+
+  </mat-drawer-content>
+</mat-drawer-container>
+

@@ -1,0 +1,28 @@
+
+<div class="users-list">
+  <div class="contact-list">Contact list</div>
+	<div *ngFor="let user of users" class="user">
+    <mat-card class="user-card">
+      <mat-card-content>
+        <span [class]="user.status? 'active':'inActive'">{{user.status? 'Active':'InActive'}}</span>
+        <div class="row">
+          <div class="col col-md-2 user-profile">
+            <img class="user-image" [src]=[user.profile]>
+          </div>
+          <div class="col col-md-6 text-col">
+            <h3 class="mb-2">{{user.firstName}} {{user.lastName}}</h3>
+            <h5>Phone: {{user.phone}}</h5>
+          </div>
+          <div class="col col-md-3 actions-col">
+            <button mat-raised-button color="primary" [routerLink]="['/details', user.id]">
+              Details
+            </button>
+            <button mat-raised-button color="warn" (click)="onDeleteUser(user.id)">
+              Delete
+            </button>
+          </div> 
+			</div>
+      </mat-card-content>
+    </mat-card> 
+	</div>
+</div>

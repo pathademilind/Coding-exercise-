@@ -1,0 +1,30 @@
+.wrapper{
+    padding: 3%;
+}
+mat-card-title{
+    background: lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
+.row1{
+    margin-top: 10px;
+}
+
+.row1 button{
+    margin: 5% 0% 5% 10%;
+    padding: 10px 75px;
+}
+form{
+    width: 100%;
+}
+mat-form-field{
+    display: block;
+}
+
+.active{
+    color: green;
+}
+.inActive{
+color: red;
+}

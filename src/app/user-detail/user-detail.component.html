@@ -1,0 +1,48 @@
+<div class="wrapper">
+ 
+  <mat-card class="user-card">
+    <mat-card-title>Contact Detail</mat-card-title>
+    <mat-card-content>
+      <span [class]="user.status? 'active':'inActive'">{{user.status? 'Active':'InActive'}}</span>
+      <div class="row">
+        
+        <div class="col col-4">
+          
+          <img class="user-image" [src]=[user.profile]>
+        </div>
+        <div class="col col-6 text-col">
+
+          <div class="row1">
+            <label for="firstName">First Name</label>
+            <h4> {{user.firstName}}</h4>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="row1">
+            <label for="lastName">Last Name</label>
+            <h4> {{user.lastName}}</h4>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="row1">
+            <label for="email">Email</label>
+            <h4> {{user.email}}</h4>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="row1">
+            <label for="phone">Phone No.</label>
+            <h4> {{user.phone}}</h4>
+          </div>
+          <mat-divider></mat-divider>
+
+          <div class="row1">
+            <button mat-raised-button color="primary" (click)="openDialog($event)">
+              Edit
+            </button>
+            <button mat-raised-button color="warn" (click)="onDeleteUser(user.id)">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

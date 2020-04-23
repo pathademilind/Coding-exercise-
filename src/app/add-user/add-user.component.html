@@ -1,0 +1,44 @@
+
+<div class="wrapper">
+  <mat-card class="user-card">
+    <mat-card-title>Add New Contact</mat-card-title>
+    <mat-card-content>
+      <div class="row">
+
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit(userForm)">
+
+          <mat-form-field appearance="fill">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="Enter your First Name" formControlName="firstName" required>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="Enter your Last Name" formControlName="lastName" required>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Phone No.</mat-label>
+            <input matInput placeholder="Enter your Phone no." formControlName="phone" required>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="pat@example.com" formControlName="email" required>
+          </mat-form-field>
+
+
+          <div class="row1">
+            <button mat-raised-button color="primary" type="submit">
+              Save
+            </button>
+            <button mat-raised-button color="warn" type="button" mat-dialog-close>
+              Cancle
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,56 @@
+.users-list{
+    padding: 50px;
+}
+.user{
+  margin-bottom: 5px;
+}
+.user-card {
+    // max-width: 400px;
+  }
+  
+  .user-image {
+    width: 120px;
+    margin: 0 34px;
+    border-radius: 50%;
+    border: 1px solid gray;
+  }
+  .contact-list{
+    background: lightgray;
+    font-size: 30px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .user-profile{
+    margin-top: 12px;
+  }
+
+  button{
+      display: block;
+      padding: 10px 70px;
+    margin: 10px;
+  }
+
+  .text-col{
+    padding: 25px 70px;
+  }
+  
+  .active{
+    border: 2px solid green;
+    padding: 4px 20px;
+    border-radius: 17px;
+    background-color: lightgreen;
+    color: white;
+}
+
+.inActive{
+    border: 2px solid rgb(233, 15, 15);
+    padding: 4px 20px;
+    border-radius: 17px;
+    background-color: red;
+    color: white;
+}
+  
+
+
+
